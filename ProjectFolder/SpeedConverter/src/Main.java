@@ -9,5 +9,6 @@ public class Main {
 
         MegaBytesConverter.printMegaBytesAndKiloBytes(50000);
 
+        BarkingDog.shouldWakeUp(true, 7);
     }
 }
