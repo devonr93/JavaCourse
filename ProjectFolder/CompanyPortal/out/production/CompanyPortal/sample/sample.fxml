@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <TextField fx:id="nameField" onKeyReleased="#handleKeyReleased" GridPane.columnIndex="4"
+               GridPane.columnSpan="6" GridPane.rowIndex="6" minWidth="10.0" prefWidth="100.0"/>
+
+    <PasswordField GridPane.columnIndex="4" GridPane.columnSpan="6"
+                   GridPane.rowIndex="7" minWidth="10.0" prefWidth="100.0"/>
+
+    <Button fx:id="registerButton" onAction="#onButtonClicked" text="Register" GridPane.columnIndex="4"
+            GridPane.columnSpan="2" GridPane.rowIndex="9" minWidth="10.0" prefWidth="100.0"/>
+
+    <Button fx:id="loginButton" onAction="#onButtonClicked" text="Login" GridPane.columnIndex="7"
+            GridPane.columnSpan="2" GridPane.rowIndex="9" minWidth="10.0" prefWidth="100.0"/>
+
+    <CheckBox fx:id="firstCheckBox" onAction="#handleChange" text="Clear text after saying register or login"
+              GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="8"/>
+
+    <Label fx:id="ourLabel" text="Nothing has happened." GridPane.rowIndex="12" GridPane.columnIndex="0"/>
+
+</GridPane>
